@@ -1,0 +1,28 @@
+{
+  "name": "theoutdoors-backend",
+  "version": "1.0.0",
+  "description": "TheOutdoors e-commerce REST API — Node.js + Express + MySQL",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "ecommerce",
+    "express",
+    "mysql",
+    "api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.103.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

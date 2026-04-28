@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #080808;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0f0f0f;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #C6FF00;
+  }
+
+  ::selection {
+    background: #C6FF0033;
+    color: #C6FF00;
+  }
+}
+
+@layer components {
+  /* Glassmorphism */
+  .glass {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .glass-dark {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  /* Neon glow effects */
+  .neon-glow {
+    box-shadow: 0 0 10px #C6FF0066, 0 0 30px #C6FF0022;
+  }
+
+  .neon-text {
+    text-shadow: 0 0 10px #C6FF0088;
+  }
+
+  /* Button styles */
+  .btn-primary {
+    @apply bg-neon text-black font-semibold px-6 py-3 rounded-sm transition-all duration-200 hover:bg-neon-dim hover:scale-105 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply border border-white/20 text-white font-semibold px-6 py-3 rounded-sm transition-all duration-200 hover:border-neon hover:text-neon active:scale-95;
+  }
+
+  /* Card */
+  .product-card {
+    @apply bg-card-bg border border-card-border rounded-sm overflow-hidden transition-all duration-300 hover:border-white/20 cursor-pointer;
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #ffffff 0%, #C6FF00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .border-gradient {
+    border-image: linear-gradient(135deg, #C6FF00, transparent) 1;
+  }
+}
