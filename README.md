@@ -1,16 +1,81 @@
-# React + Vite
+# 🏕️ TheOutdoors - Online Shopping E-Commerce Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **TheOutdoors**! This is a full-stack e-commerce web application designed to provide a seamless and engaging online shopping experience. It features a modern, responsive user interface built with React and Tailwind CSS, powered by a robust Express.js backend and Supabase for data management.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Modern User Interface**: A beautifully designed, responsive storefront using React and Tailwind CSS.
+- **Product Catalog**: Browse and filter through a wide variety of outdoor products and gear.
+- **User Authentication**: Secure sign-up and login functionality with encrypted passwords and JWT-based authentication.
+- **Shopping Cart**: Easily add, remove, and manage items in your cart.
+- **Checkout Process**: Streamlined checkout and order management system.
+- **RESTful API**: A powerful backend API built with Express.js to handle data securely.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
+- **React 19** (via Vite)
+- **Tailwind CSS** for rapid and responsive styling
+- **React Router** for seamless navigation
+- **Lucide React** for beautiful icons
 
-## Expanding the ESLint configuration
+### Backend
+- **Node.js & Express.js** for the REST API
+- **Supabase** (PostgreSQL) for the database
+- **JWT (JSON Web Tokens)** for secure authentication
+- **Bcrypt.js** for password hashing
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
+
+Follow these instructions to set up the project locally on your machine.
+
+### Prerequisites
+
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- [Git](https://git-scm.com/)
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/lakshyapanwar05/Onlineshopping.git
+cd Onlineshopping
+```
+
+### 2. Backend Setup
+
+1. Navigate to the `backend` directory:
+   ```bash
+   cd backend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env` file in the `backend` directory and add your environment variables (such as Supabase credentials, JWT secrets, etc.).
+4. Start the backend server:
+   ```bash
+   npm run dev
+   ```
+   *The backend will typically run on `http://localhost:5000` or the port specified in your environment variables.*
+
+### 3. Frontend Setup
+
+1. Open a new terminal window/tab and navigate to the root directory of the project.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the Vite development server:
+   ```bash
+   npm run dev
+   ```
+   *The frontend will typically run on `http://localhost:5173`.*
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests to help improve the project.
+
+## 📄 License
+
+This project is licensed under the ISC License.
